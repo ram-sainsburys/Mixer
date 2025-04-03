@@ -18,6 +18,7 @@ let package = Package(
             name: "Mixer"),
         .testTarget(
             name: "MixerTests",
-            dependencies: ["Mixer"]),
+            dependencies: ["Mixer"],
+            resources: [.process("Support")]),
     ]
 )
